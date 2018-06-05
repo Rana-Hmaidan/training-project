@@ -9,19 +9,20 @@ import com.blade.mvc.http.Response;
 public class np {
 
     public static void main(String[] args) {
-    /*   
-     Blade.me().get("/search", new RouteHandler(){
+   Blade.me().get("/search", new RouteHandler(){
         
         public void handle(Request request, Response response) {
                 String  search= request.query("s").get();
-                response.json("يوسف");
+                response.text(search);
             }
         }).start();
      
-    */
+    /*
        Blade.me().get("/", (req, res) -> {
         res.text("Hello Blade");
     }).start();
+    */
+
     
       }
 }
